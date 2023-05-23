@@ -37,6 +37,7 @@ class PetsitterRepository
       $stmt->bindParam(':petsitter_service', $service, PDO::PARAM_STR);
     }
 
+
     $stmt->execute();
 
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
